@@ -1,0 +1,11 @@
+<app-divider><h1>Modal</h1></app-divider>
+<button (click)="onClick()" class="ui button primary">Show Model</button>
+<app-modal (close)="onClick()" *ngIf="model">
+    <div modalTitle>A resuable Model Header</div>
+    <p>I'm a reusable component</p>
+    <ng-container modalFooter class="actions">
+        <button (click)="onClick()" class="ui button">suck</button>
+    </ng-container>
+</app-modal>
+<app-divider><h1>Accordion</h1></app-divider>
+<app-accordion [items]="accordionItems"></app-accordion>

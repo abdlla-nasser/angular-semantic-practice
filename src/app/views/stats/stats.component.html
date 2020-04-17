@@ -1,0 +1,11 @@
+<div class="ui statistics">
+    <div *ngFor="let one of data" class="statistic" >
+        <div class="value">
+            <img *ngIf="one.hasOwnProperty('image')" src="{{ one.image }}" class="ui inline image">
+            {{ one.value }}
+        </div>
+        <div class="label">
+            {{ one.label }}
+        </div>
+    </div>
+</div>
